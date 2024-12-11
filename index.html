@@ -11,40 +11,84 @@
     
     </div>                                                                                                                                                                                                   
 
-    <div id="contenido">
-      <h1>
-        Funciones
-      </h1>
-      <ul>
-        <li>
-          Registro de asistencia autónomo:
-
-Los alumnos podrán registrar su propia asistencia, eliminando la necesidad de que el docente lo haga manualmente.
-
-        </li>
-        <li>
-  Compatibilidad multiplataforma:
-La aplicación será compatible con dispositivos Android e iOS para facilitar su acceso y uso.
-
-
-        </li>
-        <li>Reducción de errores de registro:
-
-Automatización del proceso para evitar errores comunes asociados con el registro manual, como confusiones o olvidos.</li>
+    <div id="funcionalidades">
+        <h1>
+          LISTADO DE FUNCIONALIDADES  
+        </h1>  
         
-        <li>
-          Solución a las dificultades específicas:
+        <div id="Listado_funcionalidades">
 
-Facilitar el registro en situaciones donde el uso de mascarillas dificulte el reconocimiento visual.
-Reducir la carga de trabajo del docente durante la clase.
-        </li>
-        <li>
-          Usabilidad centrada en el usuario:
+            <div class="card card_ancha">
+                <h2>
+                    Acerca de
+                  </h2>
+                  
+                  <img src="https://images-ext-1.discordapp.net/external/uYaD3p1GfID9Y2U4QGtMEz7LTdNjWYHEJorMrmg9cMs/https/cdn-icons-png.flaticon.com/256/4210/4210456.png?format=webp&quality=lossless" height="75" width="75"/>
+                  
+                  <p>
+                    El registro de asistencia por QR fue creada en respuesta a las necesidades generadas por la pandemia, permitiendo un control más eficiente y seguro del registro de estudiantes en las aulas de clase.
+                  </p>
+                </div>
 
-La aplicación estará diseñada para ser utilizada de manera sencilla y eficiente por los alumnos.
-        </li>
-      </ul>
-    </div>
+          <div class="card">
+          <h2>
+            Registro de asistencia autónomo
+          </h2>
+          
+          <img src="https://images-ext-1.discordapp.net/external/TJNdg96TLpMgPwireTjgla4wZ48EfHsD8W2nP7-U1Jc/https/cdn-icons-png.flaticon.com/256/2258/2258486.png?format=webp&quality=lossless" height="75" width="75"/>
+          
+          <p>
+            Los alumnos podrán registrar su propia asistencia, eliminando la necesidad de que el docente lo haga manualmente.
+          </p>
+        </div>
+        
+            <div class="card">
+          <h2>
+            Compatibilidad multiplataforma
+          </h2>
+          
+          <img src="https://media.discordapp.net/attachments/554117583931179013/1316480957506916443/10525146.png?ex=675b33ef&is=6759e26f&hm=77e7e58ab9158b6c37cb45c0d6695cda868e850b8ce69f984d2d3428a2732798&=&format=webp&quality=lossless" height="75" width="75"/>
+          
+          <p>
+            La aplicación será compatible con dispositivos Android e iOS para facilitar su acceso y uso.
+          </p>
+        </div>
+      
+      <div class="card">
+          <h2>
+            Reducción de errores de registro
+          </h2>
+          
+          <img src="https://media.discordapp.net/attachments/554117583931179013/1316481037374718112/6902533.png?ex=675b3402&is=6759e282&hm=e450db53eb8ef815e1d064f31d6873eb4bc6d46e04d61a2fc7cbf972e1aceb19&=&format=webp&quality=lossless" height="75" width="75"/>
+          
+          <p>
+            Automatización del proceso para evitar errores comunes asociados con el registro manual, como confusiones o olvidos.
+          </p>
+        </div>
+      
+      <div class="card">
+          <h2>
+            Solución a las dificultades específicas
+          </h2>
+          
+          <img src="https://cdn.discordapp.com/attachments/554117583931179013/1316481080131321877/3011229.png?ex=675b340c&is=6759e28c&hm=6aef2d39d1017e50dce071cda23bbca1357d2c25f766a3e8aebbba57176a0685&" height="75" width="75"/>
+          
+          <p>
+            Facilitar el registro en situaciones donde el uso de mascarillas dificulte el reconocimiento visual.
+      Reducir la carga de trabajo del docente durante la clase.
+          </p>
+        </div>
+            <div class="card">
+          <h2>
+            Usabilidad centrada en el usuario
+          </h2>
+          
+          <img src="https://media.discordapp.net/attachments/554117583931179013/1316481111592927354/7934455.png?ex=675b3414&is=6759e294&hm=d8346075835cffe822a18e70b228f32a8bffb9c35846fe69ebbe26856a9a4aac&=&format=webp&quality=lossless" height="75" width="75"/>
+          
+          <p>
+            La aplicación estará diseñada para ser utilizada de manera sencilla y eficiente por los alumnos.
+          </p>
+        </div>
     
   
   
@@ -81,7 +125,7 @@ body{
   font-family: 'Helvetica', 'Arial', sans-serif;
 }
 
-img{
+#qr,#logo_duoc{
   width: 100%;
 }
 
@@ -137,5 +181,87 @@ img{
   text-decoration:none;
   color: black;
 }
+
+        @media (max-width: 768px) {
+            body {
+                font-size: 16px;
+            }
+
+            #logo_duoc {
+                max-height: 70px;
+            }
+
+            .fit {
+                max-width: 100%;
+            }
+
+            #contenido {
+                padding: 10px;
+            }
+
+            #descargar {
+                width: 120px;
+                height: 50px;
+                font-size: 14px;
+            }
+        }
+
+        /* Ajustes para pantallas muy pequeñas (teléfonos) */
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            h1 {
+                font-size: 20px;
+                text-align: center;
+            }
+
+            .mostrar {
+                font-size: 16px;
+                padding: 8px;
+            }
+
+            #descargar {
+                width: 100px;
+                height: 40px;
+                font-size: 12px;
+            }
+        }
  
+        #funcionalidades{
+ max-width: 1300px;
+ text-align: center;
+} 
+#Listado_funcionalidades{
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+}
+
+.card{
+  border: 1px solid orange;
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items:  center;
+  text-align: center;
+  padding: 10px;
+}
+.card>h2{
+  font-weight: bold;
+}
+.card>p{
+  font-size: 22px;
+}
+
+.card_ancha{
+  width: 1130px;
+}
+
 </style>
