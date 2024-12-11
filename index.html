@@ -1,0 +1,142 @@
+<div class="diapositiva">
+    <div class="fit">
+      <img id="logo_duoc" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Logo_DuocUC.svg/1024px-Logo_DuocUC.svg.png"/>
+    </div>
+    
+  
+    <h1>
+    Registro de asistencia
+    </h1>
+    <div id="acceso_app">
+    
+    </div>                                                                                                                                                                                                   
+
+    <div id="contenido">
+      <h1>
+        Funciones
+      </h1>
+      <ul>
+        <li>
+          Registro de asistencia autónomo:
+
+Los alumnos podrán registrar su propia asistencia, eliminando la necesidad de que el docente lo haga manualmente.
+
+        </li>
+        <li>
+  Compatibilidad multiplataforma:
+La aplicación será compatible con dispositivos Android e iOS para facilitar su acceso y uso.
+
+
+        </li>
+        <li>Reducción de errores de registro:
+
+Automatización del proceso para evitar errores comunes asociados con el registro manual, como confusiones o olvidos.</li>
+        
+        <li>
+          Solución a las dificultades específicas:
+
+Facilitar el registro en situaciones donde el uso de mascarillas dificulte el reconocimiento visual.
+Reducir la carga de trabajo del docente durante la clase.
+        </li>
+        <li>
+          Usabilidad centrada en el usuario:
+
+La aplicación estará diseñada para ser utilizada de manera sencilla y eficiente por los alumnos.
+        </li>
+      </ul>
+    </div>
+    
+  
+  
+  
+  
+</div>
+
+<script>function es_android() {
+  var userAgent = navigator.userAgent || navigator.vendor || window.opera;
+
+  if (/android/i.test(userAgent)) {
+      return true;
+  }
+  return false;
+}
+let div = document.querySelector("#acceso_app")
+
+if(true){
+div.innerHTML = `    <button id="descargar">
+  <a href="pico.rar" download>
+      DESCARGAR APP 
+  </a>
+   
+  </button>`
+
+}else{
+div.innerHTML = `<div class="fit"> <img id="qr" src="https://impremtanovagrafic.es/wp-content/uploads/2020/10/qr_impremta-novagrafic.jpg"\> <\div>`
+
+
+} </script>
+
+<style>
+body{
+  font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+img{
+  width: 100%;
+}
+
+#logo_duoc{
+  max-height:100px;
+}
+
+.fit{
+  max-width: 600px;
+}
+
+.diapositiva{
+   height: 100%;
+   width: 100%;
+
+ display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+}
+
+
+#contenido{
+   max-width: 800px;
+
+}
+#contenido>h1{
+    text-align: center;
+}
+
+#contenido>ul>li{
+  margin-top: 5px;
+}
+
+#descargar{
+  height: 60px;
+  width: 150px;
+  border-radius: 5%;
+  cursor: pointer;
+  border: 1px solid rgba(248,179,28,0.5);
+  background-color: rgb(248,179,28);
+  font-weight: bold;
+}
+
+#descargar:hover{
+  background-color: #000058;
+  color: white;
+}
+#descargar:hover > a{
+  color: white;
+}
+
+#descargar>a{
+  text-decoration:none;
+  color: black;
+}
+ 
+</style>
